@@ -4,11 +4,11 @@ import { render, screen, fireEvent, act } from '@testing-library/react';
 import App from './App';
 
 // Mock requestAnimationFrame and cancelAnimationFrame
-global.requestAnimationFrame = vi.fn((callback) => {
+window.requestAnimationFrame = vi.fn((callback) => {
   return setTimeout(() => callback(performance.now()), 16);
 });
 
-global.cancelAnimationFrame = vi.fn((id) => {
+window.cancelAnimationFrame = vi.fn((id) => {
   clearTimeout(id);
 });
 
