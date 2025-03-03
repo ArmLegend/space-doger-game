@@ -9,6 +9,7 @@ interface ShipProps {
 export const Ship: React.FC<ShipProps> = ({ position, size }) => {
   return (
     <div 
+      className='ship'
       style={{
         position: 'absolute',
         left: position.x - size / 2,

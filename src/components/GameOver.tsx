@@ -8,6 +8,7 @@ interface GameOverProps {
 export const GameOver: React.FC<GameOverProps> = ({ score, onRestart }) => {
   return (
     <div
+      className='ship'
       style={{
         position: 'absolute',
         top: '50%',
