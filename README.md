@@ -2,6 +2,8 @@
 
 A web-based game where players navigate through space, dodging obstacles to achieve the highest score possible.
 
+![Space Dodger Screen Shot](docs-resources/space-dodger-screen-shot.png)
+
 ## Technologies Used
 
 - **React** - Frontend UI library
