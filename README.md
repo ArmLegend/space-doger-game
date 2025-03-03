@@ -1,54 +1,64 @@
-# React + TypeScript + Vite
+# Space Dodger Game 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based game where players navigate through space, dodging obstacles to achieve the highest score possible.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** - Frontend UI library
+- **TypeScript** - Static typing for JavaScript
+- **Vite** - Next generation frontend tooling
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- A space-themed environment with a starry background
+- Player-controlled spaceship using arrow keys or WASD
+- Randomly generated asteroids with varying sizes and speeds
+- Score tracking and increasing difficulty levels
+- Game over screen with option to restart
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Installation
+
+Make sure you have Node.js (v14.0 or higher) installed.
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/space-dodger-game.git
+cd space-dodger-game
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The development server will start at `http://localhost:5173` by default.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+# Run TypeScript type checking
+npm run typecheck
+
+# Run linting
+npm run lint
+
+# Run tests
+npm run test
 ```
+
+## Building for Production
+
+```bash
+# Build the project
+npm run build
+
+# Preview the production build
+npm run preview
+```
+
+The built files will be in the `dist` directory.
+
+## Game Controls
+
+- **Arrow Keys** or **WASD**: Move the player ship
